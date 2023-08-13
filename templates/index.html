@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validador de edad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+
+  </head>
+  <body class="font-montserrat cursive-font d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="text-center">
+                <h1 class="dislpay-6 mt-3 text-center" style="color: #7C0366;">Ingresa tu edad</h1>
+                    <div class="card mt-5 shadow px-3 py-3" style="background-color:#7C0366;">
+                    <form method="post">
+                        <label for="age" style="color: antiquewhite; font-weight: bold;" class="cursive-font">Edad en años:</label>
+                        <input type="number" id="age" name="age" required>
+                        <button type="submit" class="btn btn-light shadow px-5", style="color:#7C0366; font-weight:500;">Verificar</button>
+                    </form>
+                    </div><br>
+        {% if message %}
+        <h3 class="text-center" style="color:#7C0366">{{ message }}</h3>
+        {% endif %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
